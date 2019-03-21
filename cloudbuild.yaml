@@ -1,6 +1,11 @@
 steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
+  args:
   - '-c'
-  - echo hello
+  - |
+    chmod 600 /store/id_rsa
+    git config --global user.name "svc-adtech-cicd"
+    git config --global user.email "aipsupport@sky.uk"
+    
 logsBucket: 'gs://adtech-cloud-builders/logs'
