@@ -1,8 +1,5 @@
 # Setup git as root $HOME does not point to /root
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
-  args:
-  - '-c'
-  - |
-    echo "hello"
+  
 logsBucket: 'gs://adtech-cloud-builders/logs'
