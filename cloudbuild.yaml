@@ -2,7 +2,5 @@ steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
   - '-c'
-  - |
-    echo "hello"
-    
+  - echo hello
 logsBucket: 'gs://adtech-cloud-builders/logs'
